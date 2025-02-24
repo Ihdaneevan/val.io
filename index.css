@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Full-screen image setup */
+/* Full-screen container */
 body, html {
     width: 100vw; /* Full width of the viewport */
     height: 100vh; /* Full height of the viewport */
@@ -18,7 +18,8 @@ body, html {
 
 /* Image Styling */
 img {
-    width: 100vw; /* Covers full width */
-    height: 100vh; /* Covers full height */
-    object-fit: cover; /* Ensures it fills the screen without distortion */
+    width: 100vw; /* Match the screen width */
+    height: 100vh; /* Match the screen height */
+    object-fit: contain; /* Ensures the whole image is visible without cropping */
+    background-color: #000; /* Prevents gaps around the image */
 }
